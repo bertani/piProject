@@ -470,8 +470,8 @@ result_printing:
   movwf PORTB
   bcf PORTA, 0
   bsf PORTA, 1
-  ;goto result_printing
-  ;sleep
+  goto result_printing
+  sleep
   movf RES_, 0
 __end:
 END
