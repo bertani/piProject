@@ -453,15 +453,15 @@ result_printing:
   movf RES_HI, 0
   movwf I
   call to_led
+  bcf PORTA, 1
   movwf PORTB
   bsf PORTB, 0 ;forza il "."
-  bcf PORTA, 1
   bsf PORTA, 0
   movf RES_LO, 0
   movwf I
   call to_led
-  movwf PORTB
   bcf PORTA, 0
+  movwf PORTB
   bsf PORTA, 1
   goto result_printing
   sleep
