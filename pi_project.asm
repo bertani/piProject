@@ -1,4 +1,5 @@
 ; PI_project, a Monte-Carlo pi calculator written in 8bit-microchip-Assembly
+;
 ; Copyright (C) 2010 Thomas Bertani <sylar@anche.no>
 ; portions Copyright (C) 2010 Giacomo Mariani
 ;
@@ -16,11 +17,8 @@
 ; Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
 
-
 list p=16F628A
 #include p16f628A.inc
-
-
 
 I EQU 0x20
 J EQU I+1
