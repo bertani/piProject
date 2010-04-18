@@ -463,6 +463,6 @@ result_printing:
   bsf PORTA, 1
   goto result_printing
   sleep
-  movf RES_, 0
+  ;movf RES_, 0 ;per debuggare decommentare questa riga e commentare le due precedenti ;)
 __end:
 END
