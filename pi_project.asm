@@ -81,13 +81,6 @@ ORG 0x0000
 
 goto init
 
-
-ORG 0x0004
-
-Interrupts:
-goto __end
-retfie
-
 #include functions.inc
 
 var_init:
